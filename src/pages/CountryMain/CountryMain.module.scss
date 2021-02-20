@@ -1,0 +1,54 @@
+.Filter {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 2rem;
+  input,
+  select {
+    border-radius: 5px;
+    border: none;
+    padding: 1rem;
+    background: var(--main-color);
+    letter-spacing: 0.5px;
+    font-size: 14px;
+    color: var(--main-font);
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  .SearchWrapper {
+    width: 350px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba($color: #000000, $alpha: 0.2);
+    background: var(--main-color);
+    padding-left: 1rem;
+    display: flex;
+    align-items: center;
+  }
+
+  input {
+    width: 100%;
+
+    &::placeholder {
+      font-size: inherit;
+      color: inherit;
+    }
+  }
+
+  select {
+    box-shadow: 0 0 5px rgba($color: #000000, $alpha: 0.2);
+    background-position: center;
+  }
+
+  @media (max-width: 570px) {
+    flex-direction: column;
+    align-items: flex-start;
+    .SearchWrapper {
+      width: 90%;
+      margin-bottom: 2rem;
+    }
+  }
+}

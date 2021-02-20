@@ -1,0 +1,79 @@
+.BackButton {
+  background-color: var(--main-color);
+  border-radius: 5px;
+  border: none;
+  padding: 0.5rem 2rem;
+  font-weight: 300;
+  box-shadow: 0 0 10px rgba($color: #000000, $alpha: 0.2);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+  margin-bottom: 4rem;
+
+  i {
+    font-size: 16px;
+  }
+}
+
+.Wrapper {
+  width: 100%;
+  display: flex;
+  gap: 4rem;
+  justify-content: stretch;
+  .Wrapper__Item {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    h2 {
+      margin-bottom: 1rem;
+    }
+    .Listing {
+      margin-bottom: 2rem;
+      display: flex;
+      & > div {
+        flex: 1 0;
+      }
+
+      @media (max-width: 1000px) {
+        flex-direction: column;
+        gap: 2rem;
+      }
+
+    }
+
+    .Surroundings {
+      font-weight: 600;
+    }
+  }
+
+  img {
+    width: 100%;
+  }
+
+  ul > li {
+    font-weight: 600;
+    line-height: 1.5rem;
+  }
+
+  .Detail {
+    font-weight: 300;
+  }
+
+  @media (max-width: 650px) {
+    flex-direction: column;
+  }
+}
+
+
+
+
+.Error {
+  padding: 0.5rem 1rem;
+  background-color: rgb(243, 130, 130);
+  border-radius: 5px;
+  color: rgb(126, 10, 10);
+  font-weight: 600;
+  border: 1px solid rgb(126, 10, 10);
+}
