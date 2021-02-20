@@ -1,5 +1,9 @@
 # React application
 
+### Screenshots
+
+![Alt text](/app_images/CountryMenu.png "Country Menu")
+
 + npm i -> install dependencies.
 + npm start -> start application.
 
@@ -15,3 +19,5 @@ This project makes use of an API ( https://restcountries.eu/rest/v2/ )
 the theme of the application between 'dark' and 'light'.
 * It's and SPA and therefore navigation is handled with the React-Router-Dom package.
 * Styling has been setup with SCSS (CSS preprocessor). I decided to use css-modules to isolate the different classes that each functional component uses.
+* The application has been developed to be fully responsive.
++ Also contains spinner (loading) and error handling.
