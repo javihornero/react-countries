@@ -7,6 +7,10 @@
   height: 320px;
   overflow: hidden;
 
+  &:hover {
+    box-shadow: 0 0 10px rgba($color: #000000, $alpha: 0.5);
+  }
+
   img {
     object-fit: cover;
     width: 100%;
@@ -16,10 +20,10 @@
 
   .Details {
     padding: 1rem;
-    h4{
+    h4 {
       margin-bottom: 1rem;
     }
-    ul{
+    ul {
       list-style: none;
       font-size: 14px;
       font-weight: 600;
@@ -27,8 +31,6 @@
       li > span {
         font-weight: 300;
       }
-
     }
-
   }
 }
